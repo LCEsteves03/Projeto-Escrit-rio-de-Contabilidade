@@ -7,10 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 function Home() {
 
   const infosData = [
-    { title: "Chega de imprevistos", text: "Chega de imprevistos no pagamento de impostos, falta de clareza e suporte que não resolve." },
-    { title: "Organização Fiscal", text: "Com meu acompanhamento, você terá suas obrigações fiscais entregues no prazo, tudo organizado e transparente." },
-    { title: "Mais Tranquilidade", text: "Em uma plataforma simples e fácil de usar, proporcionando mais tranquilidade e confiança para focar no crescimento do seu negócio." }
-  ];
+  { 
+    title: "Sem Surpresas Fiscais", 
+    text: "Tenha previsibilidade no pagamento de impostos e elimine multas indesejadas com uma contabilidade estratégica e organizada." 
+  },
+  { 
+    title: "Gestão Contábil Eficiente", 
+    text: "Acompanhamento completo das suas obrigações, garantindo transparência, organização e segurança em cada etapa do processo fiscal." 
+  },
+  { 
+    title: "Tranquilidade para Crescer", 
+    text: "Com uma contabilidade clara e acessível, você foca no que realmente importa: expandir seu negócio com confiança e segurança." 
+  }
+];
+
 
   const PrevArrow = ({ onClick }) => (
     <FaArrowLeft className="slick-arrow left-arrow" onClick={onClick} />
@@ -40,17 +50,39 @@ function Home() {
           <div id='logo'><img src="./src/assets/CL_logo_cinza.jpeg" alt="logo" /></div>
           <div id="serves">
             <a href="">Serviços</a>
-            <a href="">Especialidades</a>
+            <a href="#cards_especialidades">Especialidades</a>
             <a href="">Contatos</a>
-            <button>FALE CONOSCO</button>
+            <button onClick={() => window.open("https://wa.me/5521977064326?text=Olá,%20quero%20saber%20mais!", "_blank")}>
+               FALE CONOSCO
+            </button>
           </div>
         </div>
 
         <div id='corpo'>
           <div id='infos'>
-            <div id='card_title'><h2>CL Contabilidade & RH:</h2></div>
-            <div id='card_subtitle'><h3>firmamos um compromisso com o seu sucesso !</h3></div>
+            <div id = "card_infos_principal">
+                <div id = "hero-text">
+                    <h1>Contabilidade & RH</h1>
+                    <p>
+                      Temos um compromisso com o seu sucesso! 
+                      Oferecemos soluções contábeis e de gestão de pessoas 
+                      que ajudam sua empresa a crescer com segurança, transparência e eficiência.
+                    </p>
+                    <ul className="hero-list">
+                      <li>✅ Contabilidade clara e acessível</li>
+                      <li>✅ Gestão de folha de pagamento e benefícios</li>
+                      <li>✅ Consultoria estratégica para reduzir custos</li>
+                      <li>✅ Apoio completo para MEI, comércio e prestadores de serviço</li>
+                    </ul>
+                    <button onClick={() => window.open("https://wa.me/5521977064326?text=Olá,%20quero%20saber%20mais!", "_blank")}>
+                      FALE CONOSCO
+                    </button>
+                </div>
+                <div id = "hero-image">
+                    <img src="./src/assets/foto_principal.png" alt="foto_principal" />
+                </div>
 
+            </div>
             <div id='card_infos_corpo'>
               <Slider {...settings}>
                 {infosData.map((info, index) => (
