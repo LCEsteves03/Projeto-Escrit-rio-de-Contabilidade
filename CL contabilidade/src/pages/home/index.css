@@ -1,0 +1,186 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 240px;
+  height: 70px;
+  padding-left: 50px;
+}
+
+/* ===== MENU SUPERIOR ===== */
+#menu_superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0 auto;
+  background-color: #646464; /* fundo branco */
+  border-bottom: 2px solid #F2F2F2; /* linha sutil */
+}
+
+#serves {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+#serves a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFFFFF; /* cinza escuro */
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#serves a:hover {
+  color: #0095D9; /* azul da logo */
+}
+
+/* ===== BOTÃO FALE CONOSCO ===== */
+button {
+  width: 180px;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FF6B1A; /* laranja */
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0095D9; /* azul no hover */
+}
+
+/* ===== CARDS DE ESPECIALIDADES ===== */
+#cards_especialidades {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#card_1,
+#card_2,
+#card_3 {
+  flex: 1;
+  min-width: 220px;
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+#card_1:hover,
+#card_2:hover,
+#card_3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícones */
+.icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cada card com cor diferente da logo */
+#card_1 .icon {
+  color: #0095D9; /* azul */
+}
+#card_2 .icon {
+  color: #3DBE29; /* verde */
+}
+#card_3 .icon {
+  color: #FF6B1A; /* laranja */
+}
+
+/* ===== TEXTO DO CORPO ===== */
+#card_infos_corpo p {
+  font-size: 18px;
+  text-align: justify;
+  color: #1E1E1E; /* preto suave */
+  line-height: 1.6;
+}
+
+/* ===== CARROSSEL DE INFORMAÇÕES ===== */
+#card_infos_corpo {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.info-slide {
+  background-color: #FFFFFF; /* mantém o padrão dos cards */
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.info-slide h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #0095D9; /* azul da logo */
+}
+
+.info-slide p {
+  font-size: 18px;
+  color: #1E1E1E;
+  line-height: 1.6;
+}
+
+/* Slick Carousel Custom */
+.slick-dots li button:before {
+  color: #0095D9; /* cor dos pontos */
+}
+
+.slick-prev, .slick-next {
+  color: #0095D9; /* cor das setas */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #FF6B1A; /* laranja do botão */
+}
+
+/* ===== SETAS SIMPLES DO CARROSSEL ===== */
+.slick-arrow {
+  font-size: 2rem;
+  color: #0095D9; /* azul da logo */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background: transparent; /* sem fundo */
+  border: none; 
+}
+
+.left-arrow {
+  left: -30px; /* ajuste conforme o layout */
+}
+
+.right-arrow {
+  right: -30px; /* ajuste conforme o layout */
+}
+
+.slick-arrow:hover {
+  color: #FF6B1A; /* laranja no hover */
+}
