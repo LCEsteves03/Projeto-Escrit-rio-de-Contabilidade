@@ -78,8 +78,18 @@ function Home() {
                       FALE CONOSCO
                     </button>
                 </div>
-                <div id = "hero-image">
-                    <img src="./src/assets/foto_principal.png" alt="foto_principal" />
+                <div className="hero-carousel">
+                  <Slider {...settings}>
+                    <div>
+                      <img src="./src/assets/foto_1.png" alt="Equipe de contabilidade" />
+                    </div>
+                    <div>
+                      <img src="./src/assets/foto_2.png" alt="Consultoria contábil" />
+                    </div>
+                    <div>
+                      <img src="./src/assets/foto_3.png" alt="Reunião de negócios" />
+                    </div>
+                  </Slider>
                 </div>
 
             </div>

@@ -222,13 +222,24 @@ button:hover {
 }
 
 .left-arrow {
-  left: -30px; /* ajuste conforme o layout */
+  left: -40px; /* ajuste conforme o layout */
 }
 
 .right-arrow {
-  right: -30px; /* ajuste conforme o layout */
+  right: -40px; /* ajuste conforme o layout */
 }
 
 .slick-arrow:hover {
   color: #FF6B1A; /* laranja no hover */
+}
+
+.hero-carousel {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
