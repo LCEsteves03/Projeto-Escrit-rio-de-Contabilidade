@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+#main{
+  background-color: #f9f9f9;
+}
 #logo img {
   width: 240px;
   height: 70px;
@@ -16,8 +19,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 60px 80px;
-  background: #fff;
-}
+  background-color: #f9f9f9;}
 
 #hero-text {
   flex: 1;
@@ -26,7 +28,7 @@
 
 #hero-text h1 {
   font-size: 2.8rem;
-  color: #0d2c54;
+  color: #0095D9;
   margin-bottom: 15px;
 }
 
@@ -36,6 +38,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 
 .hero-list {
   list-style: none;
@@ -59,6 +62,7 @@
   max-width: 450px;
   border-radius: 10px;
 }
+
 /* ===== MENU SUPERIOR ===== */
 #menu_superior {
   display: flex;
@@ -66,8 +70,8 @@
   align-items: center;
   padding: 15px 20px;
   margin: 0 auto;
-  background-color: #646464; /* fundo branco */
-  border-bottom: 2px solid #F2F2F2; /* linha sutil */
+  background-color: #646464;
+  border-bottom: 2px solid #F2F2F2;
 }
 
 #serves {
@@ -80,7 +84,7 @@
 #serves a {
   text-decoration: none;
   font-size: 18px;
-  color: #FFFFFF; /* cinza escuro */
+  color: #FFFFFF;
   padding: 10px 15px;
   font-weight: 500;
   border-radius: 5px;
@@ -88,7 +92,7 @@
 }
 
 #serves a:hover {
-  color: #0095D9; /* azul da logo */
+  color: #0095D9;
 }
 
 /* ===== BOTÃO FALE CONOSCO ===== */
@@ -98,7 +102,7 @@ button {
   padding: 12px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #FF6B1A; /* laranja */
+  background-color: #FF6B1A;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
@@ -106,26 +110,41 @@ button {
 }
 
 button:hover {
-  background-color: #0095D9; /* azul no hover */
+  background-color: #0095D9;
 }
 
 /* ===== CARDS DE ESPECIALIDADES ===== */
 #cards_especialidades {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;         /* permite quebra de linha */
+  justify-content: center; /* centraliza conteúdo */
   gap: 20px;
-  flex-wrap: nowrap;
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+  align-items: flex-start;
 }
 
+/* Título ocupa linha inteira */
+#title_especialidades {
+  flex: 0 0 100%;          /* força ocupar 100% dentro do flex */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#title_especialidades h1 {
+  font-size: 2.5rem;
+  color: #0095D9;
+}
+
+/* ===== CARDS ===== */
 #card_1,
 #card_2,
 #card_3 {
   flex: 1;
   min-width: 220px;
-  background-color: #FFFFFF;
+  background-color: #f9f9f9;  
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
@@ -150,22 +169,15 @@ button:hover {
   margin-right: auto;
 }
 
-/* Cada card com cor diferente da logo */
-#card_1 .icon {
-  color: #0095D9; /* azul */
-}
-#card_2 .icon {
-  color: #3DBE29; /* verde */
-}
-#card_3 .icon {
-  color: #FF6B1A; /* laranja */
-}
+#card_1 .icon { color: #0095D9; }
+#card_2 .icon { color: #3DBE29; }
+#card_3 .icon { color: #FF6B1A; }
 
 /* ===== TEXTO DO CORPO ===== */
 #card_infos_corpo p {
   font-size: 18px;
   text-align: justify;
-  color: #1E1E1E; /* preto suave */
+  color: #1E1E1E;
   line-height: 1.6;
 }
 
@@ -173,10 +185,11 @@ button:hover {
 #card_infos_corpo {
   max-width: 700px;
   margin: 30px auto;
+  background-color: #f9f9f9;
 }
 
 .info-slide {
-  background-color: #FFFFFF; /* mantém o padrão dos cards */
+  background-color: #FFFFFF;
   padding: 25px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
@@ -186,7 +199,7 @@ button:hover {
 .info-slide h3 {
   margin-bottom: 15px;
   font-size: 22px;
-  color: #0095D9; /* azul da logo */
+  color: #0095D9;
 }
 
 .info-slide p {
@@ -197,41 +210,34 @@ button:hover {
 
 /* Slick Carousel Custom */
 .slick-dots li button:before {
-  color: #0095D9; /* cor dos pontos */
+  color: #0095D9;
 }
 
 .slick-prev, .slick-next {
-  color: #0095D9; /* cor das setas */
+  color: #0095D9;
 }
 
 .slick-prev:hover, .slick-next:hover {
-  color: #FF6B1A; /* laranja do botão */
+  color: #FF6B1A;
 }
 
 /* ===== SETAS SIMPLES DO CARROSSEL ===== */
 .slick-arrow {
   font-size: 2rem;
-  color: #0095D9; /* azul da logo */
+  color: #0095D9;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   cursor: pointer;
-  background: transparent; /* sem fundo */
+  background: transparent;
   border: none; 
 }
 
-.left-arrow {
-  left: -40px; /* ajuste conforme o layout */
-}
+.left-arrow { left: -40px; }
+.right-arrow { right: -40px; }
 
-.right-arrow {
-  right: -40px; /* ajuste conforme o layout */
-}
-
-.slick-arrow:hover {
-  color: #FF6B1A; /* laranja no hover */
-}
+.slick-arrow:hover { color: #FF6B1A; }
 
 .hero-carousel {
   flex: 1;
@@ -242,4 +248,50 @@ button:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+/* ===== SEÇÃO SOBRE NÓS ===== */
+#sobre {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+#title_sobre h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0095D9;
+  margin-bottom: 50px;
+}
+
+/* Container de 2 colunas */
+#sobre_conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Foto à esquerda */
+#fotos_sobre img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Texto à direita */
+#subtitle_sobre {
+  flex: 1;
+  min-width: 300px;
+}
+
+#subtitle_sobre h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
 }

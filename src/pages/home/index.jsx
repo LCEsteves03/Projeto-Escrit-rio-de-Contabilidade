@@ -51,6 +51,7 @@ function Home() {
           <div id="serves">
             <a href="">Serviços</a>
             <a href="#cards_especialidades">Especialidades</a>
+            <a href="#sobre">Sobre</a>
             <a href="">Contatos</a>
             <button onClick={() => window.open("https://wa.me/5521977064326?text=Olá,%20quero%20saber%20mais!", "_blank")}>
                FALE CONOSCO
@@ -105,6 +106,7 @@ function Home() {
             </div>
 
             <div id='cards_especialidades'>
+              <div id = "title_especialidades"><h1>Especialidades</h1></div>
               <div id='card_1'>
                 <FaRegCheckCircle className="icon" />
                 <div id='title_card'><h2>Contabilidade para Comércio</h2></div>
@@ -123,7 +125,23 @@ function Home() {
                 <div id='sub_card'><p>Soluções contábeis adaptadas à dinâmica do setor, com foco em segurança e crescimento.</p></div>
               </div>
             </div>
-
+            <div id="sobre">
+              <div id="title_sobre"><h1>Sobre Nós</h1></div>
+              <div id="sobre_conteudo">
+                <div id="fotos_sobre">
+                 <img src="./src/assets/CL_logo_cinza.jpeg" alt="Logo da empresa" />
+                </div>
+                <div id="subtitle_sobre">
+                  <h3>
+                    Somos uma empresa com mais de 10 anos de experiência no mercado, oferecendo soluções eficientes 
+                    e personalizadas para nossos clientes. Contamos com uma equipe de profissionais altamente capacitados 
+                    nas áreas de Recursos Humanos e Contabilidade, comprometidos em entregar serviços de qualidade, 
+                    transparência e confiança. Nosso foco é apoiar empresas na gestão de pessoas e na organização financeira, 
+                    contribuindo para o crescimento sustentável de seus negócios.
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
